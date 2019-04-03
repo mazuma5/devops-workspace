@@ -20,9 +20,9 @@ RUN apt-get -y install docker-ce=17.12.1~ce-0~debian
 RUN sudo apt-get install curl software-properties-common
 RUN curl -sL https://deb.nodesource.com/setup_11.x | sudo bash -
 RUN sudo apt-get install nodejs
-RUN install -g --save-dev @angular-devkit/build-angular'
-RUN npm install -g --save-dev http-server'
-RUN npm install -g @angular/cli'
+RUN npm install -g --save-dev @angular-devkit/build-angular
+RUN npm install -g --save-dev http-server
+RUN npm install -g @angular/cli
 #Install Google Chrome (Required for selenium)
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN sudo apt -y install ./google-chrome-stable_current_amd64.deb
